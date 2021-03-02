@@ -1,0 +1,18 @@
+<form (submit)="crearDispo(detalleForm)" #detalleForm="ngForm">
+    <h2>disp detalle</h2>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" name="nombre" ngModel required><br>
+    <label for="descripcion" >Descripción:</label><br>
+    <input type="text" name="descripcion" ngModel required><br><br>
+    <label for="tipo" >Tipo de dispositivo:</label><br>
+    <select type="text" name="tipo" ngModel required>
+      <option value="1">Lampara</option>
+      <option value="2">Ventilador</option>
+      <option value="3">TV</option>
+      <option value="4">Otro</option>
+    </select>
+    <br>
+    <label for="estatus" >Estatus:</label><br>
+    <input type="checkbox" name="estatus" ngModel ><br><br>
+    <input type="submit" value="Guardar">
+  </form>

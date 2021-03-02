@@ -1,0 +1,21 @@
+<div class="ec-cards" fxLayout="row wrap" fxLayoutGap="16px grid"  >
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%"
+      *ngFor="let d of listadoDispositivos" >
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>{{d.nombre}}</mat-card-title>
+          <mat-card-subtitle>{{d.estatus}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="/assets/images/iot{{d.tipo}}.jpg" alt="Lampara">
+        <mat-card-content>
+          <p>
+            {{d.descripcion}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button (click)= "onClickOn(d._id)" mat-button>Encender</button>
+          <button (click)= "onClickOff(d._id)" mat-button>Apagar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>

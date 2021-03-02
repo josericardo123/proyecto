@@ -1,0 +1,22 @@
+<p>
+  <mat-toolbar >
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button routerLink="/"
+    class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>assessment</mat-icon>
+    </button>
+    <button mat-icon-button routerLink="/create"
+    class="example-icon"
+    aria-label="Example icon-button with share icon">
+      <mat-icon>build</mat-icon>
+    </button>
+  </mat-toolbar>
+</p>
+  
+<div class="content" role="main">
+  <router-outlet></router-outlet>
+</div>
